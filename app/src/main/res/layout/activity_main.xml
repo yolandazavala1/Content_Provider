@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content Provider"
+        android:textSize="70dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/contenedorBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <Button
+            android:id="@+id/btnActualizarUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Update">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnInsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Insertar">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Eliminar"></Button>
+
+        <EditText
+            android:id="@+id/txtEliminar"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:hint="Resultados:"
+        android:id="@+id/txtResultados"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/contenedorBotones"
+        android:layout_alignParentBottom="true"
+        >
+
+    </TextView>
+
+</RelativeLayout>
